@@ -12,6 +12,7 @@
 		BD0FFA031E37561700C215F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FFA011E37561700C215F6 /* Main.storyboard */; };
 		BD0FFA051E37561700C215F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0FFA041E37561700C215F6 /* Assets.xcassets */; };
 		BD0FFA081E37561700C215F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FFA061E37561700C215F6 /* LaunchScreen.storyboard */; };
+		BD29E7571E375EED008D7B90 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD29E7561E375EED008D7B90 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BD0FFA041E37561700C215F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD0FFA071E37561700C215F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD0FFA091E37561700C215F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD29E7561E375EED008D7B90 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BD0FF9FD1E37561700C215F6 /* AppDelegate.swift */,
 				BD0FF9FF1E37561700C215F6 /* ViewController.swift */,
 				BD0FFA011E37561700C215F6 /* Main.storyboard */,
+				BD29E7561E375EED008D7B90 /* Story.swift */,
 				BD0FFA041E37561700C215F6 /* Assets.xcassets */,
 				BD0FFA061E37561700C215F6 /* LaunchScreen.storyboard */,
 				BD0FFA091E37561700C215F6 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				BD0FFA001E37561700C215F6 /* ViewController.swift in Sources */,
 				BD0FF9FE1E37561700C215F6 /* AppDelegate.swift in Sources */,
+				BD29E7571E375EED008D7B90 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				BD0FFA0E1E37561700C215F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
