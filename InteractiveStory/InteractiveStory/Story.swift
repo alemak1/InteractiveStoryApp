@@ -67,4 +67,22 @@ class Page{
         self.story = story
     }
     
+    func addChoice(title: String, story: Story)->Page{
+        let page = Page(story: story)
+        return addChoice(title: title, page: page)
+    }
+    
+    func addChoice(title: String, page: Page)-> Page{
+        
+        switch(firstChoice,secondChoice){
+        case (.some,.some): break
+        case (.none,.none),(.none,.some):
+            firstChoice = (title,page)
+        case (.some,.none):
+            secondChoice = (title,page)
+        }
+        
+        return page
+    }
+    
 }
