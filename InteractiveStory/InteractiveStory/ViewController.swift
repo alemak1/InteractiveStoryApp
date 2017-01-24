@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startAdventure"{
             if let pageController = segue.destination as? PageController{
-                pageController.page = Adventure.story(name: "Choose Your Adventure")
+                pageController.page = Adventure.story(name: "Yongren Wang")
             }
         }
     }

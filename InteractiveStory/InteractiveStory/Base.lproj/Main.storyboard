@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,14 +32,24 @@
                                     <segue destination="mV8-Fn-GGw" kind="show" identifier="startAdventure" id="Zsl-Hq-YIU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGT-0R-qiW">
+                                <rect key="frame" x="32" y="519" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGT-0R-qiW" secondAttribute="trailing" constant="16" id="2Bv-5J-38a"/>
                             <constraint firstItem="fub-Py-n1A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jN-Os-RCB"/>
                             <constraint firstItem="fub-Py-n1A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ES5-XA-Uwp"/>
+                            <constraint firstItem="AGT-0R-qiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLv-vd-Nkh"/>
                             <constraint firstItem="aoM-1d-AlQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V1S-aU-49A"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aoM-1d-AlQ" secondAttribute="bottom" constant="48" id="W0A-SG-e6Y"/>
+                            <constraint firstItem="aoM-1d-AlQ" firstAttribute="top" secondItem="AGT-0R-qiW" secondAttribute="bottom" constant="40" id="s3l-bZ-86q"/>
                             <constraint firstAttribute="trailing" secondItem="fub-Py-n1A" secondAttribute="trailing" id="wS3-2C-IMm"/>
+                            <constraint firstItem="AGT-0R-qiW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="wig-gD-tiq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fub-Py-n1A" secondAttribute="bottom" id="yPc-qD-Bcc"/>
                         </constraints>
                     </view>
@@ -46,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="-350"/>
+            <point key="canvasLocation" x="-60" y="-350"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="1Le-Tm-7lx">
