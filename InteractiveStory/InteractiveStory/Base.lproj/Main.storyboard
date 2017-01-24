@@ -54,10 +54,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tCJ-Du-5PB"/>
+                    <connections>
+                        <outlet property="nameField" destination="AGT-0R-qiW" id="ikN-kY-mXv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-60" y="-350"/>
+            <point key="canvasLocation" x="454" y="-301"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="1Le-Tm-7lx">
