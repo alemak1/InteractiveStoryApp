@@ -31,10 +31,10 @@ class PageController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blue
         
         if let page = self.page{
             print(page.story.text)
+            artwork.image = page.story.artwork
         }
     }
     
@@ -42,5 +42,17 @@ class PageController: UIViewController{
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        view.addSubview(artwork)
+        artwork.translatesAutoresizingMaskIntoConstraints = false
+       
+        NSLayoutConstraint.activate([
+            artwork.topAnchor.constraint(equalTo: view.topAnchor),
+            artwork.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            artwork.rightAnchor.constraint(equalTo: view.rightAnchor),
+            artwork.leftAnchor.constraint(equalTo: view.leftAnchor)
+            ])
+    }
   
 }
