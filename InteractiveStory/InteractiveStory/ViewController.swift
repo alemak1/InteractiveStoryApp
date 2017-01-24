@@ -44,8 +44,13 @@ class ViewController: UIViewController {
                 }
                 
                     
-            } catch{
-                
+            } catch VCError.NoName{
+                let alertController = UIAlertController(title: "Name Not Provided", message: "Provide a name to start your story", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(action)
+                present(alertController, animated: true, completion: nil)
+            } catch let error {
+                fatalError("\(error)")
             }
         }
     }
