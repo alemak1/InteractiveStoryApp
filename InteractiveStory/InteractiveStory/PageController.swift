@@ -47,6 +47,7 @@ class PageController: UIViewController{
             firstChoiceButton.addTarget(self, action: #selector(PageController.loadFirstChoice), for: .touchUpInside)
         } else {
             firstChoiceButton.setTitle("Play Again", for: .normal)
+            firstChoiceButton.addTarget(self, action: #selector(PageController.playAgain), for: .touchUpInside)
         }
         
         if let secondChoice = page?.secondChoice{
@@ -112,6 +113,10 @@ class PageController: UIViewController{
             
             navigationController?.pushViewController(pageController, animated: true)
         }
+    }
+    
+    func playAgain(){
+        navigationController?.popToRootViewController(animated: true)
     }
   
 }
