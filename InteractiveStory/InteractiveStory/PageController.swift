@@ -13,6 +13,12 @@ class PageController: UIViewController{
     
     var page: Page?
     
+    
+    let artwork = UIImageView()
+    let storyLabel = UILabel()
+    let firstChoiceButton = UIButton(type: UIButtonType.system)
+    let secondChoiceButton = UIButton(type: UIButtonType.system)
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
