@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="148" y="-341"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="1Le-Tm-7lx">
             <objects>
-                <viewController id="mV8-Fn-GGw" sceneMemberID="viewController">
+                <viewController id="mV8-Fn-GGw" customClass="PageController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qxg-Vm-uIg"/>
                         <viewControllerLayoutGuide type="bottom" id="hqZ-ex-saD"/>
