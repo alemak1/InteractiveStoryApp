@@ -28,7 +28,7 @@
                                 <rect key="frame" x="133" y="610" width="108" height="30"/>
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
-                                    <segue destination="mV8-Fn-GGw" kind="show" id="Zsl-Hq-YIU"/>
+                                    <segue destination="mV8-Fn-GGw" kind="show" identifier="startAdventure" id="Zsl-Hq-YIU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="-341"/>
+            <point key="canvasLocation" x="-281" y="-350"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="1Le-Tm-7lx">

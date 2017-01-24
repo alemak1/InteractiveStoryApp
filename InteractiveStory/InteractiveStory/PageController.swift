@@ -26,9 +26,15 @@ class PageController: UIViewController{
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.blue
+        
+        if let page = self.page{
+            print(page.story.text)
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+  
 }
