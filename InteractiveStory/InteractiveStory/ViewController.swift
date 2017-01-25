@@ -36,7 +36,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
             let keyboardFrame = keyBoardFrameValue.cgRectValue
             
             UIView.animate(withDuration: 0.8){
-                self.textFieldBottomConstraint.constant -= 10 + keyboardFrame.size.height
+                self.textFieldBottomConstraint.constant = 40
+                self.view.layoutIfNeeded()
             }
         }
     }
