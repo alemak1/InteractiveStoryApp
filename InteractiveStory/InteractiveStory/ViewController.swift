@@ -18,12 +18,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameField: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyBoardWillShow), name: .UIKeyboardWillShow, object: nil)
+        
     }
 
+    
+    func keyBoardWillShow(notification: NSNotification){
+        print("Keyboard will show")
+    }
+    
+    deinit{
+        NotificationCenter.default.removeObserver(self, name: #selector(ViewController.keyBoardWillShow), object: nil)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
