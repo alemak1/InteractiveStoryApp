@@ -11,6 +11,8 @@ import Foundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
+    
     
     enum VCError: Error{
         case NoName
@@ -30,7 +32,11 @@ class ViewController: UIViewController {
 
     
     func keyBoardWillShow(notification: NSNotification){
-        print("Keyboard will show")
+        if let userInfoDict = notification.userInfo, let keyBoardFrameValue = userInfoDict[UIKeyboardFrameEndUserInfoKey] as? NSValue{
+            let keyboardFrame = keyBoardFrameValue.cgRectValue
+            
+            textFieldBottomConstraint.constant = 10 + keyboardFrame.size.height
+        }
     }
     
  
