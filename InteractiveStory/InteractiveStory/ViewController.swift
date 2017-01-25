@@ -35,7 +35,12 @@ class ViewController: UIViewController {
         if let userInfoDict = notification.userInfo, let keyBoardFrameValue = userInfoDict[UIKeyboardFrameEndUserInfoKey] as? NSValue{
             let keyboardFrame = keyBoardFrameValue.cgRectValue
             
-            textFieldBottomConstraint.constant = 10 + keyboardFrame.size.height
+            UIView.animate(withDuration: 0.8){
+                
+                self.textFieldBottomConstraint.constant = 10 + keyboardFrame.size.height
+                self.view.layoutIfNeeded()
+            }
+            
         }
     }
     
