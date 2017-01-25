@@ -33,10 +33,7 @@ class ViewController: UIViewController {
         print("Keyboard will show")
     }
     
-    deinit{
-        NotificationCenter.default.removeObserver(self, name: #selector(ViewController.keyBoardWillShow), object: nil)
-        
-    }
+ 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
