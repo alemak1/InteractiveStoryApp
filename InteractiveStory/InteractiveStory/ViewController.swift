@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var textFieldBottomConstraint: NSLayoutConstraint!
     
@@ -75,6 +75,13 @@ class ViewController: UIViewController {
                 fatalError("\(error)")
             }
         }
+    }
+    
+    //MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 
