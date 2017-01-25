@@ -28,8 +28,18 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyBoardWillShow), name: .UIKeyboardWillShow, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyBoardWillHide), name: .UIKeyboardWillHide, object: nil)
     }
 
+    func keyBoardWillHide(notification: NSNotification){
+        if let userInfoDict = notification.userInfo, let keyBoardFrameValue = userInfoDict[UIKeyboardFrameEndUserInfoKey] as? NSValue{
+            let keyboardFrame = keyBoardFrameValue.cgRectValue
+            
+            UIView.animate(withDuration: 0.8){
+                self.textFieldBottomConstraint.constant -= 10 + keyboardFrame.size.height
+            }
+        }
+    }
     
     func keyBoardWillShow(notification: NSNotification){
         if let userInfoDict = notification.userInfo, let keyBoardFrameValue = userInfoDict[UIKeyboardFrameEndUserInfoKey] as? NSValue{
